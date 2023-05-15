@@ -1,0 +1,9 @@
+# My solution to Two Sum problem on leetcode
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        if len(nums) == 2:
+            return [0,1]
+        for x in range(len(nums)):
+            for y in range(len(nums)):
+                if nums[x] + nums[y] == target and x != y:
+                    return [x,y]
